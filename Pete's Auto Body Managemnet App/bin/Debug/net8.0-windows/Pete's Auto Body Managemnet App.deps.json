@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Pete's Auto Body Managemnet App/1.0.0": {
+        "runtime": {
+          "Pete's Auto Body Managemnet App.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Pete's Auto Body Managemnet App/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

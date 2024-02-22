@@ -1,0 +1,20 @@
+C:\Users\Madison\Documents\Projects\Pete's Auto Body Managemnet App\Pete's Auto Body Managemnet App\bin\Debug\net8.0-windows\Pete's Auto Body Managemnet App.exe
+C:\Users\Madison\Documents\Projects\Pete's Auto Body Managemnet App\Pete's Auto Body Managemnet App\bin\Debug\net8.0-windows\Pete's Auto Body Managemnet App.deps.json
+C:\Users\Madison\Documents\Projects\Pete's Auto Body Managemnet App\Pete's Auto Body Managemnet App\bin\Debug\net8.0-windows\Pete's Auto Body Managemnet App.runtimeconfig.json
+C:\Users\Madison\Documents\Projects\Pete's Auto Body Managemnet App\Pete's Auto Body Managemnet App\bin\Debug\net8.0-windows\Pete's Auto Body Managemnet App.dll
+C:\Users\Madison\Documents\Projects\Pete's Auto Body Managemnet App\Pete's Auto Body Managemnet App\bin\Debug\net8.0-windows\Pete's Auto Body Managemnet App.pdb
+C:\Users\Madison\Documents\Projects\Pete's Auto Body Managemnet App\Pete's Auto Body Managemnet App\obj\Debug\net8.0-windows\Pete_s_Auto_Body_Managemnet_App.Cars.resources
+C:\Users\Madison\Documents\Projects\Pete's Auto Body Managemnet App\Pete's Auto Body Managemnet App\obj\Debug\net8.0-windows\Pete's Auto Body Managemnet App.csproj.GenerateResource.cache
+C:\Users\Madison\Documents\Projects\Pete's Auto Body Managemnet App\Pete's Auto Body Managemnet App\obj\Debug\net8.0-windows\Pete's Auto Body Managemnet App.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Madison\Documents\Projects\Pete's Auto Body Managemnet App\Pete's Auto Body Managemnet App\obj\Debug\net8.0-windows\Pete's Auto Body Managemnet App.AssemblyInfoInputs.cache
+C:\Users\Madison\Documents\Projects\Pete's Auto Body Managemnet App\Pete's Auto Body Managemnet App\obj\Debug\net8.0-windows\Pete's Auto Body Managemnet App.AssemblyInfo.cs
+C:\Users\Madison\Documents\Projects\Pete's Auto Body Managemnet App\Pete's Auto Body Managemnet App\obj\Debug\net8.0-windows\Pete's Auto Body Managemnet App.csproj.CoreCompileInputs.cache
+C:\Users\Madison\Documents\Projects\Pete's Auto Body Managemnet App\Pete's Auto Body Managemnet App\obj\Debug\net8.0-windows\Pete's Auto Body Managemnet App.sourcelink.json
+C:\Users\Madison\Documents\Projects\Pete's Auto Body Managemnet App\Pete's Auto Body Managemnet App\obj\Debug\net8.0-windows\Pete's Auto Body Managemnet App.dll
+C:\Users\Madison\Documents\Projects\Pete's Auto Body Managemnet App\Pete's Auto Body Managemnet App\obj\Debug\net8.0-windows\refint\Pete's Auto Body Managemnet App.dll
+C:\Users\Madison\Documents\Projects\Pete's Auto Body Managemnet App\Pete's Auto Body Managemnet App\obj\Debug\net8.0-windows\Pete's Auto Body Managemnet App.pdb
+C:\Users\Madison\Documents\Projects\Pete's Auto Body Managemnet App\Pete's Auto Body Managemnet App\obj\Debug\net8.0-windows\Pete's Auto Body Managemnet App.genruntimeconfig.cache
+C:\Users\Madison\Documents\Projects\Pete's Auto Body Managemnet App\Pete's Auto Body Managemnet App\obj\Debug\net8.0-windows\ref\Pete's Auto Body Managemnet App.dll
+C:\Users\Madison\Documents\Projects\Pete's Auto Body Managemnet App\Pete's Auto Body Managemnet App\obj\Debug\net8.0-windows\Pete_s_Auto_Body_Managemnet_App.Properties.Resources.resources
+C:\Users\Madison\Documents\Projects\Pete's Auto Body Managemnet App\Pete's Auto Body Managemnet App\obj\Debug\net8.0-windows\Pete_s_Auto_Body_Managemnet_App.Stocks.resources
+C:\Users\Madison\Documents\Projects\Pete's Auto Body Managemnet App\Pete's Auto Body Managemnet App\obj\Debug\net8.0-windows\Pete_s_Auto_Body_Managemnet_App.Employees.resources
