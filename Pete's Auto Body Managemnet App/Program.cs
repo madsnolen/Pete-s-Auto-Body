@@ -16,9 +16,8 @@ namespace Pete_s_Auto_Body_Managemnet_App
         {
            Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            ApplicationConfiguration.Initialize();
             Application.Run(new Cars());
-            Application.Run(new Cars());
+            
         }
     }
 }

@@ -32,21 +32,21 @@ namespace Pete_s_Auto_Body_Managemnet_App
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cars));
             panel1 = new Panel();
             panel3 = new Panel();
-            dataGridView1 = new DataGridView();
-            button3 = new Button();
-            button2 = new Button();
-            button1 = new Button();
-            dateTimePicker1 = new DateTimePicker();
+            CarDGV = new DataGridView();
+            DeleteBtn = new Button();
+            EditBtn = new Button();
+            AddBtn = new Button();
+            CDate = new DateTimePicker();
             label8 = new Label();
-            richTextBox5 = new RichTextBox();
-            richTextBox4 = new RichTextBox();
+            OwnerNameTb = new RichTextBox();
+            ColorTb = new RichTextBox();
             label7 = new Label();
             label6 = new Label();
-            richTextBox3 = new RichTextBox();
-            richTextBox2 = new RichTextBox();
+            CarModelTb = new RichTextBox();
+            CarBrandTb = new RichTextBox();
             label5 = new Label();
             label4 = new Label();
-            richTextBox1 = new RichTextBox();
+            CarNumTb = new RichTextBox();
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
@@ -71,7 +71,7 @@ namespace Pete_s_Auto_Body_Managemnet_App
             backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
             panel1.SuspendLayout();
             panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)CarDGV).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
@@ -100,21 +100,21 @@ namespace Pete_s_Auto_Body_Managemnet_App
             // panel3
             // 
             panel3.BackColor = Color.DimGray;
-            panel3.Controls.Add(dataGridView1);
-            panel3.Controls.Add(button3);
-            panel3.Controls.Add(button2);
-            panel3.Controls.Add(button1);
-            panel3.Controls.Add(dateTimePicker1);
+            panel3.Controls.Add(CarDGV);
+            panel3.Controls.Add(DeleteBtn);
+            panel3.Controls.Add(EditBtn);
+            panel3.Controls.Add(AddBtn);
+            panel3.Controls.Add(CDate);
             panel3.Controls.Add(label8);
-            panel3.Controls.Add(richTextBox5);
-            panel3.Controls.Add(richTextBox4);
+            panel3.Controls.Add(OwnerNameTb);
+            panel3.Controls.Add(ColorTb);
             panel3.Controls.Add(label7);
             panel3.Controls.Add(label6);
-            panel3.Controls.Add(richTextBox3);
-            panel3.Controls.Add(richTextBox2);
+            panel3.Controls.Add(CarModelTb);
+            panel3.Controls.Add(CarBrandTb);
             panel3.Controls.Add(label5);
             panel3.Controls.Add(label4);
-            panel3.Controls.Add(richTextBox1);
+            panel3.Controls.Add(CarNumTb);
             panel3.Controls.Add(label3);
             panel3.ForeColor = Color.White;
             panel3.Location = new Point(225, 120);
@@ -122,56 +122,57 @@ namespace Pete_s_Auto_Body_Managemnet_App
             panel3.Size = new Size(970, 539);
             panel3.TabIndex = 1;
             // 
-            // dataGridView1
+            // CarDGV
             // 
-            dataGridView1.BackgroundColor = Color.White;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(3, 321);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(964, 215);
-            dataGridView1.TabIndex = 18;
+            CarDGV.BackgroundColor = Color.White;
+            CarDGV.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            CarDGV.Location = new Point(3, 321);
+            CarDGV.Name = "CarDGV";
+            CarDGV.Size = new Size(964, 215);
+            CarDGV.TabIndex = 18;
             // 
-            // button3
+            // DeleteBtn
             // 
-            button3.BackColor = Color.Firebrick;
-            button3.ForeColor = Color.Black;
-            button3.Location = new Point(553, 263);
-            button3.Name = "button3";
-            button3.Size = new Size(126, 42);
-            button3.TabIndex = 17;
-            button3.Text = "Delete";
-            button3.UseVisualStyleBackColor = false;
+            DeleteBtn.BackColor = Color.Firebrick;
+            DeleteBtn.ForeColor = Color.Black;
+            DeleteBtn.Location = new Point(553, 263);
+            DeleteBtn.Name = "DeleteBtn";
+            DeleteBtn.Size = new Size(126, 42);
+            DeleteBtn.TabIndex = 17;
+            DeleteBtn.Text = "Delete";
+            DeleteBtn.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // EditBtn
             // 
-            button2.BackColor = Color.DodgerBlue;
-            button2.ForeColor = Color.Black;
-            button2.Location = new Point(386, 263);
-            button2.Name = "button2";
-            button2.Size = new Size(126, 42);
-            button2.TabIndex = 16;
-            button2.Text = "Edit";
-            button2.UseVisualStyleBackColor = false;
+            EditBtn.BackColor = Color.DodgerBlue;
+            EditBtn.ForeColor = Color.Black;
+            EditBtn.Location = new Point(386, 263);
+            EditBtn.Name = "EditBtn";
+            EditBtn.Size = new Size(126, 42);
+            EditBtn.TabIndex = 16;
+            EditBtn.Text = "Edit";
+            EditBtn.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // AddBtn
             // 
-            button1.BackColor = Color.SeaGreen;
-            button1.ForeColor = Color.Black;
-            button1.Location = new Point(214, 263);
-            button1.Name = "button1";
-            button1.Size = new Size(126, 42);
-            button1.TabIndex = 15;
-            button1.Text = "Add";
-            button1.UseVisualStyleBackColor = false;
+            AddBtn.BackColor = Color.SeaGreen;
+            AddBtn.ForeColor = Color.Black;
+            AddBtn.Location = new Point(214, 263);
+            AddBtn.Name = "AddBtn";
+            AddBtn.Size = new Size(126, 42);
+            AddBtn.TabIndex = 15;
+            AddBtn.Text = "Add";
+            AddBtn.UseVisualStyleBackColor = false;
+            AddBtn.Click += AddBtn_Click;
             // 
-            // dateTimePicker1
+            // CDate
             // 
-            dateTimePicker1.Font = new Font("Arial Narrow", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            dateTimePicker1.Format = DateTimePickerFormat.Short;
-            dateTimePicker1.Location = new Point(719, 86);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(158, 21);
-            dateTimePicker1.TabIndex = 14;
+            CDate.Font = new Font("Arial Narrow", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            CDate.Format = DateTimePickerFormat.Short;
+            CDate.Location = new Point(719, 86);
+            CDate.Name = "CDate";
+            CDate.Size = new Size(158, 21);
+            CDate.TabIndex = 14;
             // 
             // label8
             // 
@@ -184,21 +185,21 @@ namespace Pete_s_Auto_Body_Managemnet_App
             label8.TabIndex = 13;
             label8.Text = "Owner Name";
             // 
-            // richTextBox5
+            // OwnerNameTb
             // 
-            richTextBox5.Location = new Point(408, 177);
-            richTextBox5.Name = "richTextBox5";
-            richTextBox5.Size = new Size(162, 67);
-            richTextBox5.TabIndex = 12;
-            richTextBox5.Text = "";
+            OwnerNameTb.Location = new Point(408, 177);
+            OwnerNameTb.Name = "OwnerNameTb";
+            OwnerNameTb.Size = new Size(162, 67);
+            OwnerNameTb.TabIndex = 12;
+            OwnerNameTb.Text = "";
             // 
-            // richTextBox4
+            // ColorTb
             // 
-            richTextBox4.Location = new Point(214, 177);
-            richTextBox4.Name = "richTextBox4";
-            richTextBox4.Size = new Size(162, 67);
-            richTextBox4.TabIndex = 11;
-            richTextBox4.Text = "";
+            ColorTb.Location = new Point(214, 177);
+            ColorTb.Name = "ColorTb";
+            ColorTb.Size = new Size(162, 67);
+            ColorTb.TabIndex = 11;
+            ColorTb.Text = "";
             // 
             // label7
             // 
@@ -222,21 +223,21 @@ namespace Pete_s_Auto_Body_Managemnet_App
             label6.TabIndex = 9;
             label6.Text = "Car Model";
             // 
-            // richTextBox3
+            // CarModelTb
             // 
-            richTextBox3.Location = new Point(408, 69);
-            richTextBox3.Name = "richTextBox3";
-            richTextBox3.Size = new Size(162, 67);
-            richTextBox3.TabIndex = 8;
-            richTextBox3.Text = "";
+            CarModelTb.Location = new Point(408, 69);
+            CarModelTb.Name = "CarModelTb";
+            CarModelTb.Size = new Size(162, 67);
+            CarModelTb.TabIndex = 8;
+            CarModelTb.Text = "";
             // 
-            // richTextBox2
+            // CarBrandTb
             // 
-            richTextBox2.Location = new Point(214, 69);
-            richTextBox2.Name = "richTextBox2";
-            richTextBox2.Size = new Size(162, 67);
-            richTextBox2.TabIndex = 7;
-            richTextBox2.Text = "";
+            CarBrandTb.Location = new Point(214, 69);
+            CarBrandTb.Name = "CarBrandTb";
+            CarBrandTb.Size = new Size(162, 67);
+            CarBrandTb.TabIndex = 7;
+            CarBrandTb.Text = "";
             // 
             // label5
             // 
@@ -260,13 +261,13 @@ namespace Pete_s_Auto_Body_Managemnet_App
             label4.TabIndex = 5;
             label4.Text = "Car Number";
             // 
-            // richTextBox1
+            // CarNumTb
             // 
-            richTextBox1.Location = new Point(22, 69);
-            richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(162, 67);
-            richTextBox1.TabIndex = 4;
-            richTextBox1.Text = "";
+            CarNumTb.Location = new Point(22, 69);
+            CarNumTb.Name = "CarNumTb";
+            CarNumTb.Size = new Size(162, 67);
+            CarNumTb.TabIndex = 4;
+            CarNumTb.Text = "";
             // 
             // label3
             // 
@@ -364,7 +365,7 @@ namespace Pete_s_Auto_Body_Managemnet_App
             pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox7.TabIndex = 31;
             pictureBox7.TabStop = false;
-            pictureBox7.Click += pictureBox7_Click;
+            
             // 
             // label15
             // 
@@ -496,7 +497,7 @@ namespace Pete_s_Auto_Body_Managemnet_App
             label9.Size = new Size(111, 33);
             label9.TabIndex = 19;
             label9.Text = "Garage MS";
-            label9.Click += label9_Click;
+            
             // 
             // Cars
             // 
@@ -511,7 +512,7 @@ namespace Pete_s_Auto_Body_Managemnet_App
             panel1.PerformLayout();
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)CarDGV).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
@@ -556,21 +557,21 @@ namespace Pete_s_Auto_Body_Managemnet_App
         private Label label3;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.ComponentModel.BackgroundWorker backgroundWorker2;
-        private RichTextBox richTextBox1;
+        private RichTextBox CarNumTb;
         private Label label4;
-        private DateTimePicker dateTimePicker1;
+        private DateTimePicker CDate;
         private Label label8;
-        private RichTextBox richTextBox5;
-        private RichTextBox richTextBox4;
+        private RichTextBox OwnerNameTb;
+        private RichTextBox ColorTb;
         private Label label7;
         private Label label6;
-        private RichTextBox richTextBox3;
-        private RichTextBox richTextBox2;
+        private RichTextBox CarModelTb;
+        private RichTextBox CarBrandTb;
         private Label label5;
-        private Button button3;
-        private Button button2;
-        private Button button1;
-        private DataGridView dataGridView1;
+        private Button DeleteBtn;
+        private Button EditBtn;
+        private Button AddBtn;
+        private DataGridView CarDGV;
         private Label label9;
         private PictureBox pictureBox2;
         private Label label11;

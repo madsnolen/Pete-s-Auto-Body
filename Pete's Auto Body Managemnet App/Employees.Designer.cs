@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Employees));
-            label2 = new Label();
+            backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             pictureBox8 = new PictureBox();
             label16 = new Label();
             pictureBox7 = new PictureBox();
@@ -37,15 +37,17 @@
             pictureBox6 = new PictureBox();
             label14 = new Label();
             pictureBox5 = new PictureBox();
-            backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             label13 = new Label();
+            pictureBox4 = new PictureBox();
             label12 = new Label();
             pictureBox3 = new PictureBox();
             label11 = new Label();
             label10 = new Label();
             pictureBox2 = new PictureBox();
             label9 = new Label();
+            backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
             panel3 = new Panel();
+            comboBox1 = new ComboBox();
             dataGridView1 = new DataGridView();
             button3 = new Button();
             button2 = new Button();
@@ -57,37 +59,24 @@
             label4 = new Label();
             richTextBox1 = new RichTextBox();
             label3 = new Label();
-            pictureBox4 = new PictureBox();
-            backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
-            label1 = new Label();
-            panel1 = new Panel();
-            pictureBox1 = new PictureBox();
             panel2 = new Panel();
-            comboBox1 = new ComboBox();
+            panel1 = new Panel();
+            label2 = new Label();
+            label1 = new Label();
+            pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            panel2.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            panel2.SuspendLayout();
             SuspendLayout();
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Bahnschrift Condensed", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.ForeColor = Color.White;
-            label2.Location = new Point(225, 20);
-            label2.Name = "label2";
-            label2.Size = new Size(185, 33);
-            label2.TabIndex = 0;
-            label2.Text = "Manage Employees";
             // 
             // pictureBox8
             // 
@@ -133,10 +122,11 @@
             // 
             // pictureBox6
             // 
+            pictureBox6.BackColor = Color.Transparent;
             pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
-            pictureBox6.Location = new Point(4, 310);
+            pictureBox6.Location = new Point(0, 310);
             pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(57, 54);
+            pictureBox6.Size = new Size(61, 54);
             pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox6.TabIndex = 29;
             pictureBox6.TabStop = false;
@@ -154,6 +144,7 @@
             // 
             // pictureBox5
             // 
+            pictureBox5.BackColor = Color.LightSkyBlue;
             pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
             pictureBox5.Location = new Point(-1, 244);
             pictureBox5.Name = "pictureBox5";
@@ -166,18 +157,28 @@
             // 
             label13.AutoSize = true;
             label13.Font = new Font("Bahnschrift Condensed", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label13.ForeColor = Color.White;
+            label13.ForeColor = Color.LightSkyBlue;
             label13.Location = new Point(53, 261);
             label13.Name = "label13";
             label13.Size = new Size(110, 33);
             label13.TabIndex = 26;
             label13.Text = "Employees";
             // 
+            // pictureBox4
+            // 
+            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
+            pictureBox4.Location = new Point(0, 3);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(59, 45);
+            pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox4.TabIndex = 25;
+            pictureBox4.TabStop = false;
+            // 
             // label12
             // 
             label12.AutoSize = true;
             label12.Font = new Font("Bahnschrift Condensed", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label12.ForeColor = Color.LightSkyBlue;
+            label12.ForeColor = Color.Transparent;
             label12.Location = new Point(53, 137);
             label12.Name = "label12";
             label12.Size = new Size(55, 33);
@@ -218,7 +219,7 @@
             // 
             // pictureBox2
             // 
-            pictureBox2.BackColor = Color.LightSkyBlue;
+            pictureBox2.BackColor = Color.Transparent;
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
             pictureBox2.Location = new Point(0, 120);
             pictureBox2.Name = "pictureBox2";
@@ -256,8 +257,18 @@
             panel3.ForeColor = Color.White;
             panel3.Location = new Point(225, 120);
             panel3.Name = "panel3";
-            panel3.Size = new Size(970, 539);
+            panel3.Size = new Size(970, 548);
             panel3.TabIndex = 1;
+            // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Items.AddRange(new object[] { "Male", "Female", "Non-binary" });
+            comboBox1.Location = new Point(616, 69);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(121, 23);
+            comboBox1.TabIndex = 19;
+            comboBox1.Text = "Gender";
             // 
             // dataGridView1
             // 
@@ -265,7 +276,7 @@
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Location = new Point(3, 321);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(964, 215);
+            dataGridView1.Size = new Size(964, 224);
             dataGridView1.TabIndex = 18;
             // 
             // button3
@@ -369,49 +380,6 @@
             label3.TabIndex = 2;
             label3.Text = "Employee Information";
             // 
-            // pictureBox4
-            // 
-            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(0, 3);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(59, 45);
-            pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox4.TabIndex = 25;
-            pictureBox4.TabStop = false;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(1064, 20);
-            label1.Name = "label1";
-            label1.Size = new Size(38, 15);
-            label1.TabIndex = 0;
-            label1.Text = "label1";
-            // 
-            // panel1
-            // 
-            panel1.BackColor = Color.Black;
-            panel1.Controls.Add(panel3);
-            panel1.Controls.Add(label2);
-            panel1.Controls.Add(label1);
-            panel1.Controls.Add(pictureBox1);
-            panel1.Controls.Add(panel2);
-            panel1.Dock = DockStyle.Fill;
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(1191, 632);
-            panel1.TabIndex = 1;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(1045, 3);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(159, 125);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
-            // 
             // panel2
             // 
             panel2.BackColor = Color.DimGray;
@@ -433,48 +401,83 @@
             panel2.Dock = DockStyle.Left;
             panel2.Location = new Point(0, 0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(200, 632);
+            panel2.Size = new Size(200, 671);
             panel2.TabIndex = 0;
             // 
-            // comboBox1
+            // panel1
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "Male", "Female" });
-            comboBox1.Location = new Point(616, 69);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(121, 23);
-            comboBox1.TabIndex = 19;
-            comboBox1.Text = "Gender";
+            panel1.BackColor = Color.Black;
+            panel1.Controls.Add(panel3);
+            panel1.Controls.Add(label2);
+            panel1.Controls.Add(label1);
+            panel1.Controls.Add(pictureBox1);
+            panel1.Controls.Add(panel2);
+            panel1.Dock = DockStyle.Fill;
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(1207, 671);
+            panel1.TabIndex = 4;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Bahnschrift Condensed", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(225, 20);
+            label2.Name = "label2";
+            label2.Size = new Size(185, 33);
+            label2.TabIndex = 0;
+            label2.Text = "Manage Employees";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(1064, 20);
+            label1.Name = "label1";
+            label1.Size = new Size(38, 15);
+            label1.TabIndex = 0;
+            label1.Text = "label1";
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(1029, 0);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(159, 125);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
             // 
             // Employees
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1191, 632);
+            ClientSize = new Size(1207, 671);
             Controls.Add(panel1);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "Employees";
             Text = "Employees";
             ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            panel2.ResumeLayout(false);
-            panel2.PerformLayout();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private Label label2;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private PictureBox pictureBox8;
         private Label label16;
         private PictureBox pictureBox7;
@@ -482,14 +485,15 @@
         private PictureBox pictureBox6;
         private Label label14;
         private PictureBox pictureBox5;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private Label label13;
+        private PictureBox pictureBox4;
         private Label label12;
         private PictureBox pictureBox3;
         private Label label11;
         private Label label10;
         private PictureBox pictureBox2;
         private Label label9;
+        private System.ComponentModel.BackgroundWorker backgroundWorker2;
         private Panel panel3;
         private ComboBox comboBox1;
         private DataGridView dataGridView1;
@@ -503,11 +507,10 @@
         private Label label4;
         private RichTextBox richTextBox1;
         private Label label3;
-        private PictureBox pictureBox4;
-        private System.ComponentModel.BackgroundWorker backgroundWorker2;
-        private Label label1;
-        private Panel panel1;
-        private PictureBox pictureBox1;
         private Panel panel2;
+        private Panel panel1;
+        private Label label2;
+        private Label label1;
+        private PictureBox pictureBox1;
     }
 }

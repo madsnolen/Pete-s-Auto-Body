@@ -276,7 +276,7 @@
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Location = new Point(3, 321);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(960, 215);
+            dataGridView1.Size = new Size(964, 215);
             dataGridView1.TabIndex = 18;
             // 
             // panel1
@@ -290,7 +290,7 @@
             panel1.Dock = DockStyle.Fill;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1191, 632);
+            panel1.Size = new Size(1207, 671);
             panel1.TabIndex = 1;
             // 
             // panel3
@@ -442,14 +442,14 @@
             panel2.Dock = DockStyle.Left;
             panel2.Location = new Point(0, 0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(200, 632);
+            panel2.Size = new Size(200, 671);
             panel2.TabIndex = 0;
             // 
             // Stocks
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1191, 632);
+            ClientSize = new Size(1207, 671);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Stocks";
