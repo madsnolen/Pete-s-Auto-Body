@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Pete\'s Auto Body Managemnet App")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+78acad97c7f1accfc22958367f6b5a7da00c53b5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a9b42ed224cb479afbe453f1b0b2d5e5e1c2896a")]
 [assembly: System.Reflection.AssemblyProductAttribute("Pete\'s Auto Body Managemnet App")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Pete\'s Auto Body Managemnet App")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

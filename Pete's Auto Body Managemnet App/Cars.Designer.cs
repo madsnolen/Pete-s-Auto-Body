@@ -268,6 +268,7 @@ namespace Pete_s_Auto_Body_Managemnet_App
             CarNumTb.Size = new Size(162, 67);
             CarNumTb.TabIndex = 4;
             CarNumTb.Text = "";
+            CarNumTb.TextChanged += CarNumTb_TextChanged;
             // 
             // label3
             // 
@@ -365,7 +366,6 @@ namespace Pete_s_Auto_Body_Managemnet_App
             pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox7.TabIndex = 31;
             pictureBox7.TabStop = false;
-            
             // 
             // label15
             // 
@@ -497,7 +497,6 @@ namespace Pete_s_Auto_Body_Managemnet_App
             label9.Size = new Size(111, 33);
             label9.TabIndex = 19;
             label9.Text = "Garage MS";
-            
             // 
             // Cars
             // 
@@ -524,6 +523,11 @@ namespace Pete_s_Auto_Body_Managemnet_App
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
+        }
+
+        private void CarNumTb_TextChanged(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         private void label15_Click(object sender, EventArgs e)
